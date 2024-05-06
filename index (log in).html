@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  
+    <title>Q4 Quiz 1</title>
+
+    <style>
+        body {
+            background-image: linear-gradient(#ec6647, #e1c2ab);
+            height: 742px;
+        }
+        #login-container {
+            box-shadow: 4px 4px 4px 4px #f1a389;
+            padding: 10px;
+            margin-top: 200px;
+            background-color: #efedf0;
+            width: 500px;
+        }
+        label {
+            font-family: Consolas;
+            font-size: 20px; 
+            color: #000000; 
+        }
+        #login {
+            width: 100px;
+        }
+        #profile-icon {
+            height: 130px;
+            width: 130px;
+            margin-top: 25px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+        .btn-login {
+            background-color: #f1a78c; 
+            color: black;
+        }
+        .btn-login:hover {
+            background-color: #e9c1a8; 
+        }
+        .btn-cancel {
+            background-color: #ec6647; 
+            color: black;
+        }
+        .btn-cancel:hover {
+            background-color: #f5d5cd; 
+        }
+        .button {
+                background-color: lightpink;
+                }  
+
+        .button1 {font-size: 50px}
+        .button2 {font-size: 50px} 
+    </style>
+</head>
+<body>
+
+<center>
+    <div id="login-container">
+        <div class="col-md-10">
+            <img id="profile-icon" src="enha ob.jpg"><br><br>
+
+        <form action="mainpage.html" class="form-group">
+            <label id="email-label"></label><br>
+            <input type="text" class="form-control bg-light" name="email" id="email">
+            <br>
+            <label id="pwd-label"></label><br>
+            <input type="text" class="form-control bg-default" name="email" id="email">
+            <br>
+            
+            <a href="mainpage.html"><button class="btn btn-success btn-lg btn-login">Login</button></a>
+            <a href="#"><button type="reset" class="btn btn-light btn-lg btn-cancel">Cancel</button></a>
+        </form>
+        </div>
+    </div>
+</center>    
+
+    <script type="text/javascript">
+        document.getElementById("email-label").innerHTML = "Email:";
+        document.getElementById("pwd-label").innerHTML = "Password:";
+    </script>
+</body>
+</html>
